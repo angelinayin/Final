@@ -1,0 +1,164 @@
+body {
+  background-color: black;
+    
+}
+/*text color*/
+h1 {
+    color: white;
+    font-family: 'Corben', sans-serif;
+    font-size: 48px;
+    background: linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+ 
+}
+
+/*highlight*/
+p::selection{
+    background: rgba(230, 106, 213, 0.3)
+}
+
+.big::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: UnifrakturCook, sans-serif;
+    
+}
+
+/*hover overlay effect*/
+
+.image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to left, rgba(112, 101, 214, 0.8), rgba(230, 106, 213, 0.8));
+}
+
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*image gallery*/
+div.gallery {
+  margin: 0px;
+  border: 1px solid #000000;
+  float: left;
+  position: relative;
+  left: 6%;
+  width: 350px;
+  
+}
+
+div.gallery:hover .overlay {
+  opacity: 1;
+}
+
+
+div.gallery img {
+width: 100%;
+height: auto;
+display: column;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*parallax*/
+
+.parallax {
+  /* The image used */
+  background-image: url("//live.staticflickr.com/65535/50209233241_06d763de38_k.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*fun word shtuffs
+*{
+margin: auto;
+padding: auto;
+box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.animated {
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    background: linear-gradient(to right, #ccc 50%, #7065D6 50%, #E66AD5);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+.animated:hover{
+    background-position: -100%;
+}
